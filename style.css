@@ -1,0 +1,32 @@
+body{
+    margin: 0 auto;
+    background-color: black;
+    color: rgb(217, 184, 248);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+}
+.box1{
+    margin-top: 10vh;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(183, 106, 255);
+    animation: move 3s forwards;
+}
+.box2{
+    margin-top: 10vh;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(24, 243, 192);
+    animation: move 3s infinite;
+
+}
+
+@keyframes move {
+    0% { transform: translateX(0); }
+    100% { transform: translate(100px); }
+}
